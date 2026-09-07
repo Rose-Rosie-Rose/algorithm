@@ -100,3 +100,10 @@ llist.print_list()
 
 # 리스트 길이 출력
 print("리스트의 길이:", llist.length())
+
+# 실행 결과
+# 0 -> 1 -> 2 -> 3 -> None
+# 3을 찾았나요? True
+# 5를 찾았나요? False
+# 0 -> 1 -> 3 -> None
+# 리스트의 길이: 3
