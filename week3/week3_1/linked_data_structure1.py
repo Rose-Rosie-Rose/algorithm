@@ -1,5 +1,6 @@
 # 단순연결리스트의 구현
 # 노드를 만들기 위하여 파이썬의 클래스를 사용하여 노드를 정의함
+# 이 자료에서 노드는 연결리스트에서 데이터 하나를 담는 한 칸
 
 class Node:
     def __init__(self, data):
@@ -75,3 +76,27 @@ class LinkedList:
                 return True
             current = current.next
         return False
+
+# 실행부
+# 연결 리스트 객체 생성
+llist = LinkedList()
+
+# 노드 추가
+llist.append(1)
+llist.append(2)
+llist.append(3)
+llist.prepend(0)
+
+# 리스트 출력
+llist.print_list()
+
+# 특정 값 검색
+print("3을 찾았나요?", llist.search(3))    # 출력: True
+print("5를 찾았나요?", llist.search(5))    # 출력: False
+
+# 특정 값 삭제
+llist.delete_node(2)
+llist.print_list()
+
+# 리스트 길이 출력
+print("리스트의 길이:", llist.length())
